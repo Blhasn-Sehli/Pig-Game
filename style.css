@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(to left , #A9907E 50% ,#ABC4AA 100% );
+}
+#game-title{
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    text-transform: uppercase;
+    font-style: italic;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 900 ;
+    color: #272829;
+}
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 70%;
+    filter: blur(0.5px);
+    border-radius: 20px;
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.player{
+    flex: 50%;    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #272829;
+    font-weight: bolder;
+    justify-content: space-around;
+    text-transform: uppercase;
+    height: 100%;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    
+}
+.current{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    height: 19%;
+    border-radius: 16px;
+    width: 45%;
+    background-color: #F4F2DE;
+    font-size: larger;
+    gap: 10%;
+}
+.score1,.score2{
+    font-size: 400%;
+    font-weight: 900;
+    
+}
+#player--1,#player--2{
+font-size: 250%;
+}
+.player--active{
+    background-color: #EAEAEA;
+}
+img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    height: 100px;
+    
+}
+.btn{
+    font-size: medium;
+    position: absolute;
+    background: white;
+    border: none;
+    border-radius:20px ;
+    width: 14%;
+    height: 6%;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.btn:hover{
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+.new--game{
+    top: 10%;
+}
+.roll--dice{
+    top: 70%;
+}
+.hold--dice{
+    top: 79%;
+}
