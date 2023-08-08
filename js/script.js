@@ -1,3 +1,9 @@
+var items=JSON.parse(localStorage.getItem("item"))
+console.log(items);
+$("#player--1").text(items[0])
+$("#player--2").text(items[1])
+
+
 function PigGame() {
     var instance={}
     instance.cuurentPlayer=1
@@ -9,7 +15,7 @@ function PigGame() {
     instance.hold=hold
     instance.dice=undefined
     instance.resetGame=resetGame
-    instance.bound=50
+    instance.bound=100
     instance.valid=valid
     return instance
 }
@@ -71,14 +77,14 @@ var game=PigGame()
 
 $(".new--game").click(function () {
 game.resetGame()
-location.reload()
+$(location).attr("href","login.html")
 
 })
 $(".roll--dice").click(function () {
     var dice=random(1,6)
     game.dice=dice
     $("img").show()
-    $("img").prop("src",`images/pig${dice}.png`)
+    $("img").prop("src",`../images/pig${dice}.png`)
     game.roll(dice)
     $("#current1").text(game.cuurentScore1)
     $("#current2").text(game.cuurentScore2)

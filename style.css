@@ -1,12 +1,15 @@
+/* for both html files  */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* for both html files  */
 body{
     height: 100vh;
     background: linear-gradient(to left , #A9907E 50% ,#ABC4AA 100% );
 }
+/* for both html files  */
 #game-title{
     letter-spacing: 2px;
     word-spacing: 1px;
@@ -18,6 +21,7 @@ body{
     font-weight: 900 ;
     color: #272829;
 }
+/* for both html files  */
 main{
     position: absolute;
     top: 50%;
@@ -103,4 +107,58 @@ img{
 }
 .hold--dice{
     top: 79%;
+}
+
+/* css for page login.html */
+.info{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5%;
+    border-radius: 20px;
+    
+}
+.name{ 
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    word-spacing: 2px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: x-large;
+    margin-bottom: 10px;
+}
+
+input{
+    width: 40%;
+    height: 5%;
+    border-radius: 20px;
+    outline: none;
+    text-align: center;
+    font-size: x-large;
+    letter-spacing: 2px;
+    
+}
+#go--btn{
+position: absolute;
+top: 75%;
+width: 15%;
+height: 5%;
+border: none;
+border-radius: 15px;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#go--btn:hover{
+transform: scale(1.2);
+background-color: #ABC4AA;
+transition: all 0.8s ;
+}
+#dice{
+    position: absolute;
+    left: 50.6%;
+    width: 70%;
+    height: 100%;
+    
 }
