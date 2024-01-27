@@ -7,7 +7,7 @@ $("#go--btn").click(function () {
         localStorage.setItem("item",JSON.stringify([name1.val(),name2.val()])) 
         document.querySelector("#name1").value=""
         document.querySelector("#name2").value=""
-        $(location).attr('href',"index.html")
+        $(location).attr('href',"game.html")
     }else{
         alert("No")
     }
