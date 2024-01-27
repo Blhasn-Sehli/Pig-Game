@@ -77,7 +77,7 @@ var game=PigGame()
 
 $(".new--game").click(function () {
 game.resetGame()
-$(location).attr("href","login.html")
+$(location).attr("href","index.html")
 
 })
 $(".roll--dice").click(function () {
